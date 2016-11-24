@@ -9,6 +9,6 @@
 <body>
 
 <%= yield %>
-
+<%= javascript_tag "$(function() { #{yield(:javascript_code)} });" if content_for? :javascript_code %>
 </body>
 </html>

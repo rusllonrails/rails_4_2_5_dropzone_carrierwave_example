@@ -1,0 +1,8 @@
+h2 Pictures
+
+button.btn.btn-primary#fileupload Загрузить с устройства
+
+#devise_images_list
+
+= content_for(:javascript_code) do
+  | PicturesUpload.init("#{pictures_path}");
