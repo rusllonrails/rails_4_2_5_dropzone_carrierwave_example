@@ -1,0 +1,12 @@
+common: &common
+  adapter: postgresql
+  encoding: utf8
+  pool: 5
+  username: alkapone
+  password: alkapone
+  port: 5432
+  host: localhost
+
+development:
+  <<: *common
+  database: dropzone_example_development
