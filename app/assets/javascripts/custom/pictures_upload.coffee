@@ -16,6 +16,10 @@ window.PicturesUpload =
 
     self.init_callbacks(myDropzone)
 
+    $(document).on 'click', '#clickHere', ->
+      $("#fileupload").trigger('click')
+      return false
+
     $(document).on 'click', '.js-remove-image', ->
       $(this).closest('div').remove()
 
